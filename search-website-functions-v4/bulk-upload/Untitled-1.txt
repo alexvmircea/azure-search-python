@@ -1,0 +1,13 @@
+PS C:\Users\alexv> az search query-key list --resource-group rg-hr-qna --service-name cog-search-hr-qna                    
+[
+  {
+    "key": "uIHv2MFSfYZzNv6NSlEwW3Miurn8dYqsvnmDUfFi43AzSeBR6qOB",
+    "name": null
+  }
+]
+PS C:\Users\alexv> az search admin-key show --resource-group rg-hr-qna --service-name cog-search-hr-qna
+{
+  "primaryKey": "2idzTpRWSBbP0bVeBDbvwkHkOtQtQgdfowjIZagROpAzSeDni25z",
+  "secondaryKey": "313dckUr5nTWIGx2teM8LiWZIeEwjrML62mDUK4xIsAzSeCZAYpO"
+
+}

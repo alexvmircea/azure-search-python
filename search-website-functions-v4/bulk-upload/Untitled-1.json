@@ -1,0 +1,10 @@
+{
+  "name": "index1705975321079",
+  "fields": [
+    {
+      "name": "id",
+      "type": "Edm.String",
+      "key": true
+    }
+  ]
+}

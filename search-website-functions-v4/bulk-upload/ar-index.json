@@ -1,0 +1,143 @@
+{
+    "name": "ar-docs",
+    "fields": [
+      {
+        "name": "document_number",
+        "type": "Edm.String",
+        "facetable": false,
+        "filterable": false,
+        "retrievable": true,
+        "searchable": true,
+        "sortable": false,
+        "analyzer": "standard.lucene",
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "synonymMaps": [],
+        "fields": []
+      },
+      {
+        "name": "title",
+        "type": "Edm.String",
+        "facetable": false,
+        "filterable": false,
+        "retrievable": true,
+        "searchable": true,
+        "sortable": false,
+        "analyzer": "standard.lucene",
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "synonymMaps": [],
+        "fields": []
+      },
+      {
+        "name": "date",
+        "type": "Edm.String",
+        "facetable": false,
+        "filterable": false,
+        "retrievable": true,
+        "searchable": true,
+        "sortable": false,
+        "analyzer": "standard.lucene",
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "synonymMaps": [],
+        "fields": []
+      },
+      {
+        "name": "proponent",
+        "type": "Edm.String",
+        "facetable": false,
+        "filterable": false,
+        "retrievable": true,
+        "searchable": true,
+        "sortable": false,
+        "analyzer": "standard.lucene",
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "synonymMaps": [],
+        "fields": []
+      },
+      {
+        "name": "chapter",
+        "type": "Edm.String",
+        "facetable": false,
+        "filterable": false,
+        "retrievable": true,
+        "searchable": true,
+        "sortable": false,
+        "analyzer": "standard.lucene",
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "synonymMaps": [],
+        "fields": []
+      },
+      {
+        "name": "paragraph_or_table",
+        "type": "Edm.String",
+        "facetable": false,
+        "filterable": false,
+        "retrievable": true,
+        "searchable": true,
+        "sortable": false,
+        "analyzer": "standard.lucene",
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "synonymMaps": [],
+        "fields": []
+      },
+      {
+        "name": "full_reference",
+        "type": "Edm.String",
+        "facetable": false,
+        "filterable": false,
+        "key": true,
+        "retrievable": true,
+        "searchable": true,
+        "sortable": false,
+        "analyzer": "standard.lucene",
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "synonymMaps": [],
+        "fields": []
+      },
+      {
+        "name": "text_body",
+        "type": "Edm.String",
+        "facetable": false,
+        "filterable": false,
+        "retrievable": true,
+        "searchable": true,
+        "sortable": false,
+        "analyzer": "standard.lucene",
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "synonymMaps": [],
+        "fields": []
+      }
+    ],
+    "suggesters": [
+      {
+        "name": "sg",
+        "searchMode": "analyzingInfixMatching",
+        "sourceFields": [
+          "full_reference",
+          "title",
+          "chapter",
+          "paragraph_or_table"
+        ]
+      }
+    ],
+    "scoringProfiles": [],
+    "defaultScoringProfile": "",
+    "corsOptions": {
+      "allowedOrigins": [
+        "*"
+      ],
+      "maxAgeInSeconds": 300
+    },
+    "analyzers": [],
+    "charFilters": [],
+    "tokenFilters": [],
+    "tokenizers": [],
+    "encryptionKey": null
+  }
